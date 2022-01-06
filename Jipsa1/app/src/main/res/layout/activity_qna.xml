@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/bottomb"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Imgbtn_QnABack"
+                    android:layout_width="45dp"
+                    android:scaleType="centerInside"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/prev" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_QnAText"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:fontFamily="@font/tb"
+                    android:gravity="center"
+                    android:text="문의하기"
+                    android:textColor="#000000"
+                    android:textSize="27sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:id="@+id/tv_QnASpace"
+                    android:layout_width="45dp"
+                    android:scaleType="centerInside"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:layout_height="45dp"/>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_QnATitle"
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:ems="10"
+                android:hint="문의 제목을 입력하세요"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/ed_QnAContents"
+                android:layout_width="350sp"
+                android:layout_height="500sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:gravity="left|top"
+                android:background="@drawable/edge"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="문의 내용을 입력하세요"/>
+
+            <Button
+                android:id="@+id/btn_QnAUpload"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/button_style"
+                android:text="업로드"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
